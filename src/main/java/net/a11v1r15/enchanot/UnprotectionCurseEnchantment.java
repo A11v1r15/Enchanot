@@ -8,8 +8,7 @@ import net.minecraft.entity.damage.DamageSource;
 
 public class UnprotectionCurseEnchantment extends ProtectionEnchantment {
     public UnprotectionCurseEnchantment(Enchantment.Rarity weight, Type protectionType) {
-        super(weight, protectionType == Type.FALL ? EnchantmentTarget.ARMOR_FEET : EnchantmentTarget.ARMOR, new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET});
-        this.protectionType = protectionType;
+        super(weight, protectionType, new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET});
     }
  
     @Override

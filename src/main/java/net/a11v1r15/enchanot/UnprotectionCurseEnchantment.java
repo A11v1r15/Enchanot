@@ -2,7 +2,6 @@ package net.a11v1r15.enchanot;
 
 import net.minecraft.enchantment.ProtectionEnchantment;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.damage.DamageSource;
 

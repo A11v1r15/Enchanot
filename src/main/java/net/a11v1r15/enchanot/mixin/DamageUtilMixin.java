@@ -9,8 +9,8 @@ import net.minecraft.entity.DamageUtil;
 
 @Mixin(DamageUtil.class)
 public class DamageUtilMixin {
-    @ModifyArgs(method = "getInflictedDamage", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/MathHelper;clamp"))
-    private void enchanot$negativeIncludingClamp(Args args){
-        args.set(1, -(float)args.get(2));
+    @ModifyArgs(method = "getInflictedDamage(FF)F", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/math/MathHelper;clamp(FFF)F"))
+    private static void enchanot$negativeIncludingClamp(Args args){
+        args.set(1, -20f);
     }
 }
